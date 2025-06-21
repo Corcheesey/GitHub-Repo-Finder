@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+#languageList {
+    width: 215px;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.responseContainer {
+    display: flex;
+    text-align: left;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    min-height: 100px;
+    min-width: 180px;
+    border-radius: 12px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.responseContainer.error {
+    background-color: lightcoral;
+}
+
+.repoDetails {
+    display: flex;
+    justify-content: space-around;
+}
+
+#refreshBtn {
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    width: 215px;
+    height: 40px;
+    color: black;
+}
+
+#refreshBtn:hover {
+    background-color: lightgray;
+    border: 2px solid black;
+    color: black;
+}

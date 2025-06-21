@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>GitHub Repo Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/385a5043e1.js" crossorigin="anonymous"></script> 
 </head>
 <body>
 
-    
+    <div class="container">
+        <div class="header">
+            <label for="languageList">GitHub Repository Finder</label>
+            <select name="languageList" id="languageList" >
+                <option value="" disabled selected>Select a Language</option>
+                <!-- Options Populate Here -->
+            </select>
+        </div>
+        <div class="responseContainer" id="emptyState" style="display: block;">Please select a language</div>
+        <div class="responseContainer" id="loadingState" style="display: none;">Loading, please wait..</div>
+        <div class="responseContainer" id="successState" style="display: none;"><!-- Repo Details Here--></div>
+        <div class="responseContainer error" id="errorState" style="display: none;"><!-- Error Message Here--></div>
+        <button id="refreshBtn" style="display: none;">Click To Refresh</button>
+    </div>
     
 </body>
 <script src="main.js"></script>
